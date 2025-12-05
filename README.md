@@ -6,5 +6,5 @@ Obviously I am super new to Wastewater Epidemiology and actually I wasn't workin
 In any case, these are some Rt estimates drawn from summary data of wastewater viral loads and stuff, and I'm hoping that maybe someday it can be more widely used and become more interactive as time goes by (although I do suck at coding outside of R).
 
 Here's a preview of the graph I drawn: 
-![Estimated effective reproductive number (Rt) from longitudinal wastewater surveillance in Hong Kong, Data from Epidemiological Week 5, 2023 to Epidemiological Week 31, 2025](Rt_estimateR.png)
+![Estimated effective reproductive number (Rt) from longitudinal wastewater surveillance in Hong Kong, Data from Epidemiological Week 5, 2023 to Epidemiological Week 31, 2025](files/Rt_estimateR.png)
 
