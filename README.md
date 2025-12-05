@@ -6,5 +6,12 @@ Obviously I am super new to Wastewater Epidemiology and actually I wasn't workin
 In any case, these are some Rt estimates drawn from summary data of wastewater viral loads and stuff, and I'm hoping that maybe someday it can be more widely used and become more interactive as time goes by (although I do suck at coding outside of R).
 
 Here's a preview of the graph I drawn: 
+
 ![Estimated effective reproductive number (Rt) from longitudinal wastewater surveillance in Hong Kong, Data from Epidemiological Week 5, 2023 to Epidemiological Week 31, 2025](files/Rt_estimateR.png)
 
+As the error ribbon suggests the 95% CI is quite large, so probably at times this can be inaccurate. Rt = Re btw.
+
+For analysis I used EstimateR (https://github.com/covid-19-Re/estimateR/tree/master), and plotting with ggplot2 (https://ggplot2.tidyverse.org/).
+
+## Reference
+Scire J, Huisman JS, Grosu A, et al. estimateR: an R package to estimate and monitor the effective reproductive number. BMC Bioinformatics. 2023;24:310. https://doi.org/10.1186/s12859-023-05428-4
