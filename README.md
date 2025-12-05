@@ -6,5 +6,5 @@ Obviously I am super new to Wastewater Epidemiology and actually I wasn't workin
 In any case, these are some Rt estimates drawn from summary data of wastewater viral loads and stuff, and I'm hoping that maybe someday it can be more widely used and become more interactive as time goes by (although I do suck at coding outside of R).
 
 Here's a preview of the graph I drawn: 
-![](https://github.com/bchmnv/blob/wastewater-epi/files/Rt_estimateR.png?raw=true)
+https://github.com/bchmnv/blob/wastewater-epi/files/Rt_estimateR.png?raw=true
 
