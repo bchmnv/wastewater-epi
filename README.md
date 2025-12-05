@@ -7,3 +7,4 @@ In any case, these are some Rt estimates drawn from summary data of wastewater v
 
 Here's a preview of the graph I drawn: 
 ![alt text](https://github.com/bchmnv/wastewater-epi/blob/files/Rt_estimateR.png?raw=true)
+
