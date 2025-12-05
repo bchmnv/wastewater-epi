@@ -14,4 +14,11 @@ As the error ribbon suggests the 95% CI is quite large, so probably at times thi
 For analysis I used EstimateR (https://github.com/covid-19-Re/estimateR/tree/master), and plotting with ggplot2 (https://ggplot2.tidyverse.org/).
 
 ## Reference
+Package:
 Scire J, Huisman JS, Grosu A, et al. estimateR: an R package to estimate and monitor the effective reproductive number. BMC Bioinformatics. 2023;24:310. https://doi.org/10.1186/s12859-023-05428-4
+
+Parameters: (will reformat later because have no time to be 'cArEfuL' now)
+Nadeau et al. Influenza transmission dynamics quantified from wastewater. Swiss Med Wkly. 154, no. 1 (2024): 3503. https://doi.org/10.57187/s.3503
+50 Benefield et al. SARS-CoV-2 viral load peaks prior to symptom onset: a systematic review and individual-pooled analysis of coronavirus viral load from 66 studies, medRxiv (2020). https://doi.org/10.1101/2020.09.28.20202028
+51 Nishiura et al. Serial interval of novel coronavirus (COVID-19) infections, International Journal of Infectious Diseases 93, (2020): 284-286. https://doi.org/10.1016/j.ijid.2020.02.060
+<img width="930" height="45" alt="image" src="https://github.com/user-attachments/assets/c46585cf-bc64-4a8e-91b2-c91592be2ca8" />
