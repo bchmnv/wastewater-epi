@@ -1,7 +1,15 @@
+Import and install libraries required:
+
+```{r}
 library(tidyverse)
 devtools::install_github("covid-19-Re/estimateR")
 library(estimateR)
+```
 
+Then we set the parameters for analysis. The values for the delay between onset of sx and shedding into wastewater (in days)
+Mean & SD of serial interval for Rt estimation (in days) are both from literature review.
+
+```{r}
 estimateR_seed <- 0
 
 ## SARS-CoV-2 Delay between onset of symptoms and shedding into wastewater in days
@@ -23,7 +31,11 @@ std_serial_interval <- sars_cov_2_std_serial_interval_days
 estimation_window <- 3  # 3 is EpiEstim default
 minimum_cumul_incidence <- 12  # minimum cumulative number of infections for Re to be estimated, EstimateR default is 12
 n_bootstrap_reps <- 50
+```
 
+Now we import the data. Just to be clear, I was using the HK data and the data requirements (and subsequent parameters) are changed a little. I Took the final day of the epidemiological week as sampling date, and converted 7-day geometric mean of GC/L per capita into per mL. That was kind of brief but there's only so much we can do with limited data, innit? Also don't forget to switch it into list, in which viral loads are in the form of numeric vector with NAs removed
+
+```{r}
 # Import data
 ww_data <- read_csv("~/Downloads/HK covid data.csv") %>%
   as_tibble()
@@ -34,7 +46,11 @@ measurements <- list(
   values = as.numeric(ww_data$mean),
   index_offset = 0
 )
+```
 
+Then there goes the analysis. Here I also calculated uncertainties so we can adjust for it later. And because Hong Kong reports surveillance data weekly, notice that 'time_step = “week”'.
+
+```{r}
 estimates_bootstrap <- 
   get_block_bootstrapped_estimate(
     measurements,
@@ -83,9 +99,13 @@ re_est <- estimates_bootstrap %>%
   filter(!is.na(Re_estimate)) %>%
   rbind(., missingdat)
 
-# Write out data used for Re inference and results
+# Don't forget to export!
 write.csv(re_est, "~/Downloads/re_est.csv")
+```
 
+Then there's just the boring stuff where I plotted the findings with 95% confidence intervals shown with the ribbon. Don't ask me why I chose that colour, I want to know too.
+
+```{r}
 ## plot
 library(ggplot2)
 ggplot(re_est, aes(x = date, y = Re_estimate)) +
@@ -109,7 +129,4 @@ ggplot(re_est, aes(x = date, y = Re_estimate)) +
        title = "Estimated effective reproductive number (Rt) from longitudinal wastewater surveillance in Hong Kong",
        subtitle = "Data from Epidemiological Week 5, 2023 to Epidemiological Week 31, 2025",
        caption = "*Data break between 21/04-04/05/2024 due to a 2-week sampling suspension for safety review.")
-
-
-
-
+```
