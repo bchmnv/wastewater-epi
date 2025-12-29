@@ -15,10 +15,10 @@ For analysis I used EstimateR (https://github.com/covid-19-Re/estimateR/tree/mas
 
 ## Reference
 Package:
-Scire J, Huisman JS, Grosu A, et al. estimateR: an R package to estimate and monitor the effective reproductive number. BMC Bioinformatics. 2023;24:310. https://doi.org/10.1186/s12859-023-05428-4
+Scire J, Huisman JS, Grosu A, et al. estimateR: an R package to estimate and monitor the effective reproductive number. BMC Bioinformatics. 2023;24:310. doi:10.1186/s12859-023-05428-4
 
-Parameters: (will format later bc no time to be cAreFuL yet)
-Benefield et al. SARS-CoV-2 viral load peaks prior to symptom onset: a systematic review and individual-pooled analysis of coronavirus viral load from 66 studies. medRxiv (2020). https://doi.org/10.1101/2020.09.28.20202028
-Nadeau et al. Influenza transmission dynamics quantified from wastewater. Swiss Med Wkly. 2024;154(1):3503. https://doi.org/10.57187/s.3503
-Nishiura et al. Serial interval of novel coronavirus (COVID-19) infections. International Journal of Infectious Diseases 93, (2020): 284-286. https://doi.org/10.1016/j.ijid.2020.02.060
+Parameters: 
+Benefield AE, Skrip LA, Clement A, Althouse RA, Chang S, Althouse BM. SARS-CoV-2 viral load peaks prior to symptom onset: a systematic review and individual-pooled analysis of coronavirus viral load from 66 studies. medRxiv. 2020. https://doi.org/10.1101/2020.09.28.20202028
+Nadeau S, Devaux AJ, Bagutti C et al. Influenza transmission dynamics quantified from wastewater. Swiss Med Wkly. 2024;154(1):3503. doi:10.57187/s.3503
+Nishiura H, Linton NM, Akhmetzhanov AR. Serial interval of novel coronavirus (COVID-19) infections. Int J Infect Dis. 2020;93:284-286. doi:10.1016/j.ijid.2020.02.060
 <img width="930" height="45" alt="image" src="https://github.com/user-attachments/assets/c46585cf-bc64-4a8e-91b2-c91592be2ca8" />
